@@ -5,6 +5,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 
 data class Staff (
-    var name: String? = null,
-    var office: String? = null
+    val name: String? = null,
+    val office: String? = null
 )
