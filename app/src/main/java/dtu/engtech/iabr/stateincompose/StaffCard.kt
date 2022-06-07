@@ -25,14 +25,19 @@ fun StaffCard(
         Spacer(modifier = Modifier.width(8.dp))
         Column() {
             Text(
+                text = staff?.id ?: ""
+            )
+            Spacer(modifier = Modifier.height(4.dp))
+            Text(
                 text = staff?.name ?: ""
             )
             Spacer(modifier = Modifier.height(4.dp))
             Text(
-                text = staff?.office ?: "",
+                text = staff?.lokation ?: "",
                 modifier = Modifier.padding(all = 4.dp),
                 style = MaterialTheme.typography.body2
             )
+
         }
     }
 }
